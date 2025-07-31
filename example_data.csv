@@ -1,0 +1,4 @@
+Reg.,Aircraft Type,Aircraft Variant,Date of Manufacture,DOI,DOE,Lease Type,Lease End Date,Market Value,Monthly Lease (OPS)
+TC-ABC,B737,800NG,2010-05-20,2011-03-01,,operational,2026-03-01,18000000,250000
+TC-DEF,B737,MAX8,2018-06-15,2019-01-15,,financial,,25000000,
+TC-GHI,A320,320ceo,2012-07-10,2013-09-05,,own,,11500000,
