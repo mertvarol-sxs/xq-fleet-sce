@@ -1,17 +1,18 @@
+
 import pandas as pd
 from datetime import datetime
 
 def initialize_fleet_data():
     data = {
         'Reg.': ['TC-ABC', 'TC-DEF', 'TC-GHI'],
-        'Aircraft Type': ['B737', 'B737', 'A320'],
-        'Aircraft Variant': ['800NG', 'MAX8', '320ceo'],
-        'Date of Manufacture': [datetime(2010, 5, 20), datetime(2018, 6, 15), datetime(2012, 7, 10)],
-        'DOI': [datetime(2011, 3, 1), datetime(2019, 1, 15), datetime(2013, 9, 5)],
+        'Aircraft Type': ['B737-800NG', 'B737-8', 'A320neo'],
+        'Aircraft Variant': ['', '', ''],
+        'Date of Manufacture': [pd.Timestamp('2010-05-01'), pd.Timestamp('2018-07-01'), pd.Timestamp('2020-03-01')],
+        'DOI': [pd.Timestamp('2010-06-01'), pd.Timestamp('2018-08-01'), pd.Timestamp('2020-04-01')],
         'DOE': [pd.NaT, pd.NaT, pd.NaT],
-        'Lease Type': ['operational', 'financial', 'own'],
-        'Lease End Date': [datetime(2026, 3, 1), pd.NaT, pd.NaT],
-        'Market Value': [18000000, 25000000, 11500000],
-        'Monthly Lease (OPS)': [250000, pd.NA, pd.NA]
+        'Lease Type': ['OWN', 'OPS', 'FIN'],
+        'Lease End Date': [pd.NaT, pd.Timestamp('2028-08-01'), pd.NaT],
+        'Market Value': [12_000_000, 20_000_000, 18_000_000],
+        'Monthly Lease (OPS)': [None, 250_000, None]
     }
     return pd.DataFrame(data)
